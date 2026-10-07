@@ -1,0 +1,33 @@
+{
+  "recordedAt": "2026-10-07",
+  "how": "pnpm build, then `vite preview` serving dist/ with the strict Content-Security-Policy header from vite.config.ts; checked in the Browser MCP pane with JavaScript executed in the page (the viewport was emulated at 375x812).",
+  "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+  "consoleMessagesAfterLoadingAndInteracting": "none (no CSP violations, no errors)",
+  "overflow375": [
+    {
+      "colorScheme": "light",
+      "method": "for each of the 58 loadable vector variants (original, 7 mutation entries and 7 re-signed entries per vector), click each of the 7 mutation chips and compare main.scrollWidth with main.clientWidth",
+      "statesMeasured": 406,
+      "mainClientWidth": 375,
+      "documentScrollWidth": 375,
+      "worstScrollWidthMinusClientWidth": 0
+    },
+    {
+      "colorScheme": "dark",
+      "method": "same",
+      "statesMeasured": 406,
+      "mainClientWidth": 375,
+      "documentScrollWidth": 375,
+      "worstScrollWidthMinusClientWidth": 0
+    }
+  ],
+  "alsoChecked": [
+    "invalid input messages (non-base64, too short, empty) render a readable message and no result sections",
+    "loading a reviewed mutation entry shows 'signature does not verify' and RECORDED offline-host and testnet outcomes labelled with protocol"
+  ],
+  "notChecked": [
+    "browsers other than the one in the Browser MCP pane",
+    "widths below 375px",
+    "screen readers"
+  ]
+}
