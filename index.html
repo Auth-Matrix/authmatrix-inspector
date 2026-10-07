@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'" />
+    <meta name="description" content="Decode a Soroban authorization entry in your browser: authorizing address, network, credential type, nonce, expiry, nested invocations and signature verification. A preview is not a safety guarantee." />
+    <title>AuthMatrix Inspector</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193b36'/%3E%3Cpath d='M7 7h6v6H7zM19 7h6v6h-6zM13 13h6v6h-6zM7 19h6v6H7zM19 19h6v6h-6z' fill='%23e9f1ea'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip" href="#app">Skip to inspector</a>
+    <main id="app"></main>
+    <noscript><p>This inspector decodes and verifies entries locally in your browser, so it needs JavaScript.</p></noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
