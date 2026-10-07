@@ -37,7 +37,7 @@ importers:
 packages:
 
   '@anasabubakar/authmatrix-core@file:vendor/anasabubakar-authmatrix-core-0.1.0.tgz':
-    resolution: {integrity: sha512-idoT3hf+HDPdjJFFhW54Dtgo5bHiTK6fnde8sx6J1JQFGx2ZxDuxF46LWcfFT9uvLnoX7lq+SR2W/M5F1DKAEg==, tarball: file:vendor/anasabubakar-authmatrix-core-0.1.0.tgz}
+    resolution: {integrity: sha512-Kjcv//XQlIoX0RPVr8AKpFqGIACCp6gWog/jKf5evOKSanLIq+Jsbl79ZsgId6DcLwpzNS9Y4BctpirISxjI4g==, tarball: file:vendor/anasabubakar-authmatrix-core-0.1.0.tgz}
     version: 0.1.0
     engines: {node: '>=22'}
 
