@@ -1,0 +1,11 @@
+{
+  "package": "@anasabubakar/authmatrix-core",
+  "version": "0.1.0",
+  "artifact": "anasabubakar-authmatrix-core-0.1.0.tgz",
+  "sha256": "18edb06a03e520269e08ff7083047dddefb34fada0eddb3dd15d4f52c9b836cc",
+  "coreCommit": "345d696c475737b38463e8c993f64f30ce42f519",
+  "vectorFormat": "authmatrix-vectors",
+  "vectorFormatVersion": "1.0.0",
+  "evidenceFormatVersion": "1.0.0",
+  "stellarSdk": "17.2.1"
+}

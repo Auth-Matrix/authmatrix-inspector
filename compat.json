@@ -1,0 +1,14 @@
+{
+  "inspector": "0.1.0",
+  "pairs": [
+    {
+      "core": "@anasabubakar/authmatrix-core",
+      "version": "0.1.0",
+      "vectorFormat": "authmatrix-vectors",
+      "vectorFormatMajor": 1,
+      "evidenceFormatMajor": 1,
+      "adapterProtocol": "authmatrix-adapter/1",
+      "status": "tested"
+    }
+  ]
+}
