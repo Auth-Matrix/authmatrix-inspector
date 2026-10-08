@@ -1,5 +1,7 @@
 # authmatrix-inspector
 
+**Documentation:** https://stellar-developer-tools.gitbook.io/authmatrix-inspector/
+
 Hosted demo: https://authmatrix-inspector-anasamasama.vercel.app
 
 Paste a Soroban authorization entry and see what it authorizes, then change one field and watch the signature stop verifying.
