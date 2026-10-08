@@ -1,5 +1,7 @@
 # authmatrix-inspector
 
+Hosted demo: https://authmatrix-inspector-anasamasama.vercel.app
+
 Paste a Soroban authorization entry and see what it authorizes, then change one field and watch the signature stop verifying.
 
 A static browser app (Vite + vanilla TypeScript). Everything runs in the page; nothing is sent anywhere. It is the UI for authmatrix-core (a separate repo) and contains no protocol logic of its own: decoding, hashing, signature verification, mutation and token mappings all call the paired core library.
