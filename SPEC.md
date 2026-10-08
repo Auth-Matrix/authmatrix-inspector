@@ -20,7 +20,7 @@ Non-goals: simulating a transaction, calling any network or RPC, running a Sorob
 ## 3. Data and interfaces
 
 - Input: base64 text (whitespace tolerated, 200,000 character limit), or a file of at most 150,000 bytes holding base64 text or raw XDR. Passphrase: a preset (testnet, public, futurenet) or custom text.
-- Data shipped with the app comes only from the paired core tarball (`vendor/anasabubakar-authmatrix-core-<version>.tgz`): `vectors/authmatrix-vectors.v1.json`, `evidence/native-host/results.json`, `evidence/testnet/summary.json`. They are validated with the core zod schemas on load.
+- Data shipped with the app comes only from the paired core tarball (`vendor/anas.abubakar-authmatrix-core-<version>.tgz`): `vectors/authmatrix-vectors.v1.json`, `evidence/native-host/results.json`, `evidence/testnet/summary.json`. They are validated with the core zod schemas on load.
 - All decoding, verification and mutation computations call exported functions of the core library (`decodeEntry`, `verifyEntry`, `decodeCall`, `mutateAuthorization`, ...). The app implements no XDR parsing, hashing or cryptography of its own.
 
 ## 4. Pairing and compatibility
