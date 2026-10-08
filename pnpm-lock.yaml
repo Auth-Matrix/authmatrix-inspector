@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@anasabubakar/authmatrix-core':
-        specifier: file:vendor/anasabubakar-authmatrix-core-0.1.0.tgz
-        version: file:vendor/anasabubakar-authmatrix-core-0.1.0.tgz(debug@4.4.3)
+      '@anas.abubakar/authmatrix-core':
+        specifier: file:vendor/anas.abubakar-authmatrix-core-0.1.1.tgz
+        version: file:vendor/anas.abubakar-authmatrix-core-0.1.1.tgz(debug@4.4.3)
       zod:
         specifier: 4.6.5
         version: 4.6.5
@@ -36,9 +36,9 @@ importers:
 
 packages:
 
-  '@anasabubakar/authmatrix-core@file:vendor/anasabubakar-authmatrix-core-0.1.0.tgz':
-    resolution: {integrity: sha512-Kjcv//XQlIoX0RPVr8AKpFqGIACCp6gWog/jKf5evOKSanLIq+Jsbl79ZsgId6DcLwpzNS9Y4BctpirISxjI4g==, tarball: file:vendor/anasabubakar-authmatrix-core-0.1.0.tgz}
-    version: 0.1.0
+  '@anas.abubakar/authmatrix-core@file:vendor/anas.abubakar-authmatrix-core-0.1.1.tgz':
+    resolution: {integrity: sha512-PZpRXt2CY7FIAGbaKVVB+PdWQarL/D0pSbBv590x6V0vOkMN25yEIGZq8u7kVeuMpoX4i/lL253YQZkWRDdhJQ==, tarball: file:vendor/anas.abubakar-authmatrix-core-0.1.1.tgz}
+    version: 0.1.1
     engines: {node: '>=22'}
 
   '@asamuzakjp/css-color@7.1.3':
@@ -876,7 +876,7 @@ packages:
 
 snapshots:
 
-  '@anasabubakar/authmatrix-core@file:vendor/anasabubakar-authmatrix-core-0.1.0.tgz(debug@4.4.3)':
+  '@anas.abubakar/authmatrix-core@file:vendor/anas.abubakar-authmatrix-core-0.1.1.tgz(debug@4.4.3)':
     dependencies:
       '@stellar/stellar-sdk': 17.2.1(debug@4.4.3)
       zod: 4.6.5

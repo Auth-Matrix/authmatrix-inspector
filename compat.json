@@ -1,9 +1,9 @@
 {
-  "inspector": "0.1.0",
+  "inspector": "0.1.1",
   "pairs": [
     {
-      "core": "@anasabubakar/authmatrix-core",
-      "version": "0.1.0",
+      "core": "@anas.abubakar/authmatrix-core",
+      "version": "0.1.1",
       "vectorFormat": "authmatrix-vectors",
       "vectorFormatMajor": 1,
       "evidenceFormatMajor": 1,

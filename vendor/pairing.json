@@ -1,11 +1,12 @@
 {
-  "package": "@anasabubakar/authmatrix-core",
-  "version": "0.1.0",
-  "artifact": "anasabubakar-authmatrix-core-0.1.0.tgz",
-  "sha256": "148352198b0b4bf905eb4b708750aebd23a38fca6c999d09efe8d831bc3258b8",
-  "coreCommit": "d3707bea48d0a8531ee4ce23cddfc44befbcffbd",
+  "package": "@anas.abubakar/authmatrix-core",
+  "version": "0.1.1",
+  "artifact": "anas.abubakar-authmatrix-core-0.1.1.tgz",
+  "sha256": "c888ccbd5b7e89db7574130734f306b676468e3a687306a1c445f4ec563313ae",
+  "coreCommit": "ed19e039f90f4183cbbb1744c1a11fe29ce78f97",
   "vectorFormat": "authmatrix-vectors",
   "vectorFormatVersion": "1.0.0",
   "evidenceFormatVersion": "1.0.0",
-  "stellarSdk": "17.2.1"
+  "stellarSdk": "17.2.1",
+  "gitTag": "v0.1.1"
 }
