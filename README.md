@@ -53,3 +53,9 @@ Strict CSP (`script-src 'self'`, no `unsafe-eval`, no `unsafe-inline`, `connect-
 - No audit, no endorsement, no wallet or SDK maintainer review.
 
 MIT licensed. See [SPEC.md](SPEC.md), [docs/adr/](docs/adr), [SECURITY.md](SECURITY.md).
+
+## Contributors
+
+<a href="https://github.com/Anasabubakar/authmatrix-inspector/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Anasabubakar/authmatrix-inspector" alt="Contributors to authmatrix-inspector" />
+</a>
