@@ -1,6 +1,11 @@
+<p align="center"><img src="docs/assets/banner.svg" alt="authmatrix-inspector" width="100%"></p>
+
 # authmatrix-inspector
 
-**Documentation:** https://stellar-developer-tools.gitbook.io/authmatrix-inspector/
+[![CI](https://github.com/Auth-Matrix/authmatrix-inspector/actions/workflows/ci.yml/badge.svg)](https://github.com/Auth-Matrix/authmatrix-inspector/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Release](https://img.shields.io/github/v/release/Auth-Matrix/authmatrix-inspector)](https://github.com/Auth-Matrix/authmatrix-inspector/releases)
+
+[Documentation](https://stellar-developer-tools.gitbook.io/authmatrix-inspector/) · [Live demo](https://authmatrix-inspector-anasamasama.vercel.app) · [Core repository](https://github.com/Auth-Matrix/authmatrix-core) · [Issues](https://github.com/Auth-Matrix/authmatrix-inspector/issues) · [Discussions](https://github.com/Auth-Matrix/authmatrix-inspector/discussions)
+
 
 Hosted demo: https://authmatrix-inspector-anasamasama.vercel.app
 
@@ -56,8 +61,42 @@ Strict CSP (`script-src 'self'`, no `unsafe-eval`, no `unsafe-inline`, `connect-
 
 MIT licensed. See [SPEC.md](SPEC.md), [docs/adr/](docs/adr), [SECURITY.md](SECURITY.md).
 
+## Repository layout
+
+- `docs/`: decision records (ADRs), evidence and assets
+- `gitbook/`: source of the GitBook documentation
+- `scripts/`: build, generation and recording scripts
+- `src/`: source
+- `test/`: tests
+- `vendor/`: pinned artifacts from the paired core repository
+
+## Documentation
+
+The full documentation is at https://stellar-developer-tools.gitbook.io/authmatrix-inspector/. It is built from the `gitbook/` folder of this repository and synced from `main`, so a fix to a page is a pull request here.
+
+## Contributing
+
+Open issues are scoped so one person can finish one in a single cycle, and each lists acceptance criteria. Read [CONTRIBUTING.md](CONTRIBUTING.md), pick an issue from the [issue list](https://github.com/Auth-Matrix/authmatrix-inspector/issues), and say you are taking it before you start. Security reports go through [SECURITY.md](SECURITY.md), not public issues.
+
+## Maintainers
+
+| Maintainer | Role | GitHub |
+|---|---|---|
+| Anas Abubakar | Lead maintainer | [@Anasabubakar](https://github.com/Anasabubakar) |
+| Abdulbasit Fazazi | Co-maintainer | [@fazaziishola-coder](https://github.com/fazaziishola-coder) |
+
+## Community
+
+Questions and design discussion go in [GitHub Discussions](https://github.com/Auth-Matrix/authmatrix-inspector/discussions). Bugs and scoped work go in [Issues](https://github.com/Auth-Matrix/authmatrix-inspector/issues).
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
 ## Contributors
 
-<a href="https://github.com/Anasabubakar/authmatrix-inspector/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Anasabubakar/authmatrix-inspector" alt="Contributors to authmatrix-inspector" />
+Thanks to all the contributors who have made this project possible.
+
+<a href="https://github.com/Auth-Matrix/authmatrix-inspector/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Auth-Matrix/authmatrix-inspector" alt="Contributors to authmatrix-inspector" />
 </a>
