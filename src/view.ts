@@ -1,5 +1,5 @@
-import type { MutationField } from "@anasabubakar/authmatrix-core";
-import { MUTATION_FIELDS } from "@anasabubakar/authmatrix-core";
+import type { MutationField } from "@anas.abubakar/authmatrix-core";
+import { MUTATION_FIELDS } from "@anas.abubakar/authmatrix-core";
 import { fmtTyped, typeLabel, type Analysis, type MutationView, type RecordedResult, type TreeNode, type VectorMatch } from "./analysis.ts";
 import { h } from "./dom.ts";
 

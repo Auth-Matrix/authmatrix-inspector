@@ -1,4 +1,4 @@
-import { authorizationToUnsignedEntry, toBase64 } from "@anasabubakar/authmatrix-core";
+import { authorizationToUnsignedEntry, toBase64 } from "@anas.abubakar/authmatrix-core";
 import { beforeEach, describe, expect, it } from "vitest";
 import { entryFromFileBytes, mountApp } from "../src/main.ts";
 import { loadBundle } from "../src/data.ts";

@@ -1,8 +1,8 @@
 // Data shipped inside the paired core tarball. Everything the app shows as "recorded" comes from here.
-import { evidenceFileSchema, vectorFileSchema, type EvidenceFile, type VectorFile } from "@anasabubakar/authmatrix-core";
-import vectorsRaw from "@anasabubakar/authmatrix-core/vectors/authmatrix-vectors.v1.json";
-import nativeRaw from "@anasabubakar/authmatrix-core/evidence/native-host/results.json";
-import testnetRaw from "@anasabubakar/authmatrix-core/evidence/testnet/summary.json";
+import { evidenceFileSchema, vectorFileSchema, type EvidenceFile, type VectorFile } from "@anas.abubakar/authmatrix-core";
+import vectorsRaw from "@anas.abubakar/authmatrix-core/vectors/authmatrix-vectors.v1.json";
+import nativeRaw from "@anas.abubakar/authmatrix-core/evidence/native-host/results.json";
+import testnetRaw from "@anas.abubakar/authmatrix-core/evidence/testnet/summary.json";
 
 export interface Bundle {
   vectors: VectorFile;

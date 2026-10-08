@@ -6,7 +6,7 @@ import {
   VECTOR_FORMAT_VERSION,
   type EvidenceFile,
   type VectorFile,
-} from "@anasabubakar/authmatrix-core";
+} from "@anas.abubakar/authmatrix-core";
 import compat from "../compat.json";
 import pairing from "../vendor/pairing.json";
 

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { Keypair, authorizeEntry, buildWithDelegatesEntry, hash, xdr } from "@stellar/stellar-sdk/base";
-import { authorizationToUnsignedEntry, toBase64, type Authorization } from "@anasabubakar/authmatrix-core";
+import { authorizationToUnsignedEntry, toBase64, type Authorization } from "@anas.abubakar/authmatrix-core";
 import { analyze, computeMutation } from "../src/analysis.ts";
 import { loadBundle } from "../src/data.ts";
 

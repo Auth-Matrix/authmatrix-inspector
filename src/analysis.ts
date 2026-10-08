@@ -19,7 +19,7 @@ import {
   type Typed,
   type VerifyResult,
   type VectorFile,
-} from "@anasabubakar/authmatrix-core";
+} from "@anas.abubakar/authmatrix-core";
 
 export const MAX_INPUT_CHARS = 200_000;
 

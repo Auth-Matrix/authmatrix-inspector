@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { AnalysisError, analyze, computeMutation, findMatches, normalizeInput, recordedFor } from "../src/analysis.ts";
 import { loadBundle } from "../src/data.ts";
-import { MUTATION_FIELDS } from "@anasabubakar/authmatrix-core";
+import { MUTATION_FIELDS } from "@anas.abubakar/authmatrix-core";
 
 const bundle = loadBundle();
 const TESTNET = "Test SDF Network ; September 2015";

@@ -1,6 +1,6 @@
 import "./style.css";
 import { z } from "zod";
-import { MUTATION_FIELDS, type MutationField } from "@anasabubakar/authmatrix-core";
+import { MUTATION_FIELDS, type MutationField } from "@anas.abubakar/authmatrix-core";
 import { AnalysisError, PRESET_NETWORKS, analyze, caseForMatch, computeMutation, normalizeInput, recordedFor, type Analysis, type MutationView, type RecordedResult, type VectorMatch } from "./analysis.ts";
 import { checkCompat, type CompatReport } from "./compat.ts";
 import { loadBundle, type Bundle } from "./data.ts";
