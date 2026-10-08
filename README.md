@@ -49,7 +49,7 @@ Strict CSP (`script-src 'self'`, no `unsafe-eval`, no `unsafe-inline`, `connect-
 - Token decoding is by function name, arity and argument types only; a match means "token-shaped call", not "this contract is a token". Decimals are not in an entry and are not assumed.
 - Recorded host results exist only for the fixture-contract vectors and are recordings, not something this page executes.
 - Mutations need address / addressV2 credentials and contract-function invocations; recipient and amount mutations apply only to recognized calls.
-- Browser checks covered one engine (the Browser MCP pane), not other browsers or screen readers. Not deployed; no CI run yet.
+- Browser checks covered one engine (the Browser MCP pane), not other browsers or screen readers. Live on Vercel; CI green.
 - No audit, no endorsement, no wallet or SDK maintainer review.
 
 MIT licensed. See [SPEC.md](SPEC.md), [docs/adr/](docs/adr), [SECURITY.md](SECURITY.md).
