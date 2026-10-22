@@ -9,9 +9,11 @@
 
 Hosted demo: https://authmatrix-inspector-anasamasama.vercel.app
 
+Site routes: `/` (landing), `/app` (the inspector; `/app?vector=<id>` opens a reviewed vector), `/vectors` (the reviewed vector list), `/docs`, `/about`, `/privacy`, `/terms`.
+
 Paste a Soroban authorization entry and see what it authorizes, then change one field and watch the signature stop verifying.
 
-A static browser app (Vite + vanilla TypeScript). Everything runs in the page; nothing is sent anywhere. It is the UI for authmatrix-core (a separate repo) and contains no protocol logic of its own: decoding, hashing, signature verification, mutation and token mappings all call the paired core library.
+A static browser app (Vite + vanilla TypeScript). Everything runs in the page. The one optional network request is "Load from testnet" (below), made only when you press its button. It is the UI for authmatrix-core (a separate repo) and contains no protocol logic of its own: decoding, hashing, signature verification, mutation and token mappings all call the paired core library.
 
 **A preview is not a guarantee of contract safety or of everything a transaction will do.** It shows what a signature covers at the XDR level.
 
@@ -27,16 +29,20 @@ For a pasted or uploaded base64 `SorobanAuthorizationEntry`, or a reviewed vecto
 
 ## Run it
 
-Not hosted yet. From a clone (Node >= 22, pnpm 11):
+From a clone (Node >= 22, pnpm 11):
 
 ```bash
 pnpm install --frozen-lockfile
 pnpm dev                       # development server
 pnpm build && pnpm preview     # production build served with the strict CSP header
-pnpm test                      # 83 tests (vitest + jsdom)
+pnpm test                      # 135 tests (vitest + jsdom)
 ```
 
 Pick "Load a reviewed vector..." to try it immediately, for example `v2-nested-relay-testnet`, original (signed), then the amount chip in the mutation view.
+
+## Load from testnet
+
+Paste a transaction hash and press the button. The app sends one Soroban RPC `getTransaction` request to `https://soroban-testnet.stellar.org`, decodes the envelope in your browser (a fee-bump envelope is unwrapped), lists every `SorobanAuthorizationEntry` from its InvokeHostFunction operations and opens the one you choose in the inspector. Not found, failed and no-auth transactions get their own messages. This host is the only one in the CSP `connect-src` besides the app's own origin.
 
 ## Pairing with core
 
@@ -44,11 +50,11 @@ The app pins one core build: `vendor/anas.abubakar-authmatrix-core-0.1.1.tgz`, s
 
 | Inspector | Core | Vector format | Status |
 |---|---|---|---|
-| 0.1.1 | @anas.abubakar/authmatrix-core 0.1.1 | authmatrix-vectors 1.x | tested |
+| 0.2.0 | @anas.abubakar/authmatrix-core 0.1.1 | authmatrix-vectors 1.x | tested |
 
 ## Browser safety
 
-Strict CSP (`script-src 'self'`, no `unsafe-eval`, no `unsafe-inline`, `connect-src 'self'`), zod in `jitless` mode, DOM built from text nodes only, no network calls from app code. `docs/evidence/browser-checks.json` records a real-browser run of the built page under that CSP: no console messages, and at a 375px viewport `main.scrollWidth` equals `main.clientWidth` in all 406 loaded states, in light and dark.
+Strict CSP (`script-src 'self'`, no `unsafe-eval`, no `unsafe-inline`, `connect-src 'self' https://soroban-testnet.stellar.org`), zod in `jitless` mode, DOM built from text nodes only, no network calls from app code except the opt-in testnet lookup. `docs/evidence/browser-checks.json` records a real-browser run of the built page under that CSP: no console messages, and at a 375px viewport `main.scrollWidth` equals `main.clientWidth` in all 406 loaded states, in light and dark.
 
 ## Limitations
 

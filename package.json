@@ -1,6 +1,6 @@
 {
   "name": "authmatrix-inspector",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "description": "Static browser app that decodes a Soroban authorization entry, verifies its signature locally, and shows how single-field mutations invalidate it. Paired with authmatrix-core.",
   "license": "MIT",
