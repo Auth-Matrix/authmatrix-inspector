@@ -183,7 +183,7 @@ export function renderLimits(): HTMLElement {
       h("li", {}, "It is not a guarantee of contract safety, and it does not predict everything a transaction will do. It shows what the signature covers."),
       h("li", {}, "Token decoding is by function name, arity and argument types from a reviewed SEP-41 / Stellar Asset Contract table. It does not know the contract is a token. Unknown functions and values are shown raw."),
       h("li", {}, "Signature checks run locally and cover address credentials with a classic (G...) ed25519 signer. Contract-account signers, custom __check_auth and delegate signatures are not verified."),
-      h("li", {}, "Recorded host results come from the fixture contracts only, were produced earlier, and are labelled RECORDED. Nothing is sent to any network by this page."),
+      h("li", {}, "Recorded host results come from the fixture contracts only, were produced earlier, and are labelled RECORDED. The only request this page can make is the optional testnet transaction lookup, and only when you press its button."),
       h("li", {}, "No audit, endorsement or wallet review is implied."),
     ),
   );

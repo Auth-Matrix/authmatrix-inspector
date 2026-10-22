@@ -18,3 +18,9 @@ export function loadBundle(): Bundle {
     testnet: evidenceFileSchema.parse(testnetRaw),
   };
 }
+
+let cached: Bundle | null = null;
+/** Parse the paired data once per page load. */
+export function getBundle(): Bundle {
+  return (cached ??= loadBundle());
+}
