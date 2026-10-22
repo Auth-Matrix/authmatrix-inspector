@@ -11,13 +11,13 @@ importers:
       '@anas.abubakar/authmatrix-core':
         specifier: file:vendor/anas.abubakar-authmatrix-core-0.1.1.tgz
         version: file:vendor/anas.abubakar-authmatrix-core-0.1.1.tgz(debug@4.4.3)
+      '@stellar/stellar-sdk':
+        specifier: 17.2.1
+        version: 17.2.1(debug@4.4.3)
       zod:
         specifier: 4.6.5
         version: 4.6.5
     devDependencies:
-      '@stellar/stellar-sdk':
-        specifier: 17.2.1
-        version: 17.2.1(debug@4.4.3)
       '@types/node':
         specifier: 26.6.4
         version: 26.6.4

@@ -1,5 +1,8 @@
 # Changelog
 
+## Unreleased
+- Move the Stellar SDK used by the live transaction lookup from development dependencies to runtime dependencies; keep the pinned version unchanged.
+
 ## 0.2.0
 
 - Product site: landing page, `/app` (the existing inspector), `/vectors`, `/docs`, `/about`, `/privacy` and `/terms`, with a shared header and footer, a History API router and a 404 page. Vercel rewrites serve deep links.
